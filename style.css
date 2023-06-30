@@ -12,18 +12,20 @@ body{
     text-align: center;
     margin: 0;
 }
-
+iframe{
+    max-width: 300px;
+}
 
 header{
     color: antiquewhite;
-    background-image: url(images/20220610_120621.jpg);
-    margin-bottom: 80px;
+    background-image: url(images/schieve_dans_carton.webp);
+    margin-bottom: 120px;
     
 }
 #medaillon{
-    border-radius: 90px;
-    height: 200px;
-    width: 200px;
+    border-radius: 4000px;
+    height: 250px;
+    width: 250px;
     margin-left: 180px;
     margin-top: -50px;
     position: absolute;

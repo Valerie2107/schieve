@@ -1,4 +1,4 @@
-// Get the button:
+// Back To TOp button (BTT):
 //let mybutton = document.getElementById("btt");
 let mybutton= document.querySelector("#btt");  
 

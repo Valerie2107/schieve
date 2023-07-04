@@ -44,8 +44,8 @@ figure {
 
 header {
 	color: antiquewhite;
-	background-image: url(images/schieve_dans_carton.webp);
-	/* margin-bottom: 120px; */
+	background-image: url("images/schieve_dans_carton.webp");
+	padding: 2em 0;
 }
 
 header a {
@@ -114,6 +114,16 @@ iframe.redux {
 
 /* INDIVIDUAL ELEMENTS */
 
+#medaillon{
+	border-radius: 4000px;
+	height: 250px;
+	width: 250px;
+	margin-left: 180px;
+	margin-top: -50px;
+	position: absolute;
+	background-image: url("images/medaillon.jpg");
+	border: 6px solid #fff;
+}
 .miniatures {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -165,16 +175,7 @@ iframe.redux {
 .frere5 { background: url('images/potes-de-sieste.jpg') no-repeat center center / cover; }
 .frere6 { background: url('images/promiscuite.jpg') no-repeat center center / cover; }
 
-#medaillon{
-	border-radius: 4000px;
-	height: 250px;
-	width: 250px;
-	margin-left: 180px;
-	margin-top: -50px;
-	position: absolute;
-	background-image: url("images/medaillon.jpg");
-	border: 6px solid #fff;
-}
+
 
 #triptyque div {
 	display: grid;

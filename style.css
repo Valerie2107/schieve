@@ -1,102 +1,208 @@
+/* RESET and INIT  */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+
 *{
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+html, body {
+	display: flex;
+	flex-direction: column;
+}
+
 html{
-    min-width: 100%;
-    display: flex;
+	min-width: 100%;
+	font-family: 'Signika Negative', sans-serif;
 }
 body{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-}
-iframe{
-    max-width: 300px;
+	flex-grow: 1;
+	flex-direction: column;
+	text-align: center;
+	margin: 0;
 }
 
-header{
-    color: antiquewhite;
-    background-image: url(images/schieve_dans_carton.webp);
-    margin-bottom: 120px;
-    
+a {
+	text-decoration: none;
 }
-#medaillon{
-    border-radius: 4000px;
-    height: 250px;
-    width: 250px;
-    margin-left: 180px;
-    margin-top: -50px;
-    position: absolute;
-    background-image: url(images/medaillon.JPG);
-    border: 2px solid yellow;
+
+p {
+	max-width: 65ch;
+	margin: 2em auto;
+	line-height: 1.4em;
+	padding:1.4em;
 }
-main{
-    flex-grow: 1;
-    background-color: azure;
+
+h2 {
+	letter-spacing: 0.5px;
 }
-section{
-    margin: 2em 5em;
+
+figure {
+	padding:0;
+	margin: 0;
 }
-footer{
-    background-color: aqua;
+
+/* GENERAL LAYOUT */
+
+header {
+	color: antiquewhite;
+	background-image: url(images/schieve_dans_carton.webp);
+	/* margin-bottom: 120px; */
 }
+
+header a {
+	color: #33c;
+}
+
+main {
+	flex-grow: 1;
+	background-color: grey;
+}
+section {
+	margin: 2em 5em;
+	background: #fff;
+	border-radius: 3em;
+	padding: 1em;
+}
+footer {
+	background-color: #333;
+	color: #ddd;
+	padding:2em;
+}
+
+iframe {
+	max-width: 300px;
+}
+
+
+
 img{
-    max-width: 480px;
-    max-height: 480px;
+	/* max-width: 480px; */
+	max-width: 100%;
+	max-height: 480px;
 }
-video{
-    max-width: 480px;
-    max-height: 480px;
-}
-
-.img_right{
-
-}
-.img_right>div{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 1em;
-
-    border: 2px solid red;
-}
-.img_right>div p, img{
-    justify-self: center;
-    align-self: center;
-    
-
-    border: 2px dashed green;
-}
-.img_left{
-
-}
-.img_left>div{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    gap: 10px;
-    padding: 1em;
-
-    border: 2px solid red;
-}
-.img_left>div p,img{
-    justify-self: center;
-    align-self: center;
-
-    border: 2px dashed green;  
+iframe.redux {
+	max-height: 480px;
 }
 
-.img_middle{
-  
-}
-.img_middle>div{ 
-    border: 2px solid red;
-    padding: 1em;
-}
-.img_middle>div p,img{
-    justify-self: center;
-    align-self: center;
 
-    border: 2px dashed green; 
+
+
+/* COMMON PROPERTIES */
+.gridded > div {
+	display: grid;
+	gap: 10px;
+	padding: 1em;
+	/* border: 2px solid red; */
+}
+
+
+/* GRID with IMG */
+.img_right > div,
+.img_left > div {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gridded > div p,
+.gridded > img {
+	justify-self: center;
+	align-self: center;
+	border: 2px dashed green;
+}
+
+.img_middle iframe {
+	margin: 0 auto;
+}
+
+
+/* INDIVIDUAL ELEMENTS */
+
+.miniatures {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 2em 1em;
+	justify-items: center;
+	justify-content: center;
+}
+
+.miniatures figure {
+	position: relative;
+	border:4px solid #0000;
+	transition: border 0.25s ease-in-out;
+	overflow: hidden;
+}
+.miniatures figure:hover {
+	border:4px solid #000f;
+}
+
+.miniatures figcaption {
+	position: absolute;
+	bottom : 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 0.5em;
+	text-align: center;
+	background: #0009;
+	color: #fff;
+	transform: translateY(110%);
+	transition: transform 0.3s ease-in-out;
+	border-top: 2px solid #000;
+}
+
+.miniatures figure:hover figcaption {
+	transform: translateY(0);
+}
+
+.thumb {
+	width: 260px;
+	height: 200px;
+	border:1px solid #000;
+	cursor: pointer;
+}
+
+.frere1 { background: url('images/bagarre.jpg') no-repeat center center / cover; }
+.frere2 { background: url('images/frere-de-toilette-cest-pour-la-vie.jpg') no-repeat center center / cover; }
+.frere3 { background: url('images/grand_respect.jpg') no-repeat center center / cover; }
+.frere4 { background: url('images/mais-heu.jpg') no-repeat center center / cover; }
+.frere5 { background: url('images/potes-de-sieste.jpg') no-repeat center center / cover; }
+.frere6 { background: url('images/promiscuite.jpg') no-repeat center center / cover; }
+
+#medaillon{
+	border-radius: 4000px;
+	height: 250px;
+	width: 250px;
+	margin-left: 180px;
+	margin-top: -50px;
+	position: absolute;
+	background-image: url(images/medaillon.jpg);
+	border: 6px solid #fff;
+}
+
+#triptyque div {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"video texte" 
+	"video image";
+	justify-content: center;
+	gap: 0 2em;
+}
+
+#tryptique p {
+	grid-area: texte;
+}
+#triptyque iframe {
+	grid-area: video;
+}
+#triptyqye img {
+	grid-area: image;
+}
+
+/* Fake button */
+.fakebutton {
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	background: #fff;
+	color: #000;
+	border-radius: 8px;
 }

@@ -211,9 +211,9 @@ iframe.redux {
 #btt {
 	color: #0c0c0cc5;
 	background-color: white;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*	font-family: Verdana, Geneva, Tahoma, sans-serif;*/
 	font-style: italic;
-	font-weight: bold;
+/*	font-weight: bold; */
 	border: 2px solid #2e2e2e59;
 	font-size: 0.8em;
 	padding: 1em 1.5em;
@@ -229,6 +229,6 @@ iframe.redux {
 }
 
 #btt:hover {
-	background-color: hsl(22, 97%, 59%);
+	background-color:#000;
 	color: white;
 }

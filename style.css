@@ -45,12 +45,12 @@ figure {
 header {
 	position: relative;
 	color: antiquewhite;
-	background-image: url("images/backgound.webp");
+	background-image: url("images/assis_pres_du_bassin.webp");
 	padding: 2em 0;
 }
 
 header a {
-	color: #33c;
+	color: rgb(168, 168, 223);
 }
 
 main {
@@ -74,13 +74,30 @@ footer {
 	padding:2em;
 }
 
-iframe {
+iframe{
 	max-width: 300px;
+	max-height: 500px;
 }
-
+@media screen and (max-width: 499px){
+	iframe{
+		width: 100%;
+		max-width: 200px;
+		margin: none;
+	}
+}
 img{
 	max-width: 100%;
 	max-height: 480px;
+}
+.horizontal{
+	max-width: 40%;
+}
+@media screen and (max-width: 499px) {
+	.horizontal{
+		width: 100%;
+		max-width: 100%;
+	}
+	
 }
 iframe.redux {
 	max-height: 480px;
@@ -113,7 +130,12 @@ iframe.redux {
 .img_middle iframe {
 	margin: 0 auto;
 }
-
+@media screen and (max-width: 499px) {
+	.img_left > div{
+		grid-template-rows: repeat(1fr);
+	}
+	
+}
 
 /* INDIVIDUAL ELEMENTS */
 

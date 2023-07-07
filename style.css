@@ -43,8 +43,9 @@ figure {
 /* GENERAL LAYOUT */
 
 header {
+	position: relative;
 	color: antiquewhite;
-	background-image: url("images/backgound.jpg");
+	background-image: url("images/backgound.webp");
 	padding: 2em 0;
 }
 
@@ -78,7 +79,6 @@ iframe {
 }
 
 img{
-	/* max-width: 480px; */
 	max-width: 100%;
 	max-height: 480px;
 }
@@ -121,13 +121,20 @@ iframe.redux {
 	border-radius: 4000px;
 	height: 250px;
 	width: 250px;
-	margin-left: 180px;
-	margin-top: -50px;
 	position: absolute;
-	background-image: url("images/medaillon.jpg");
+	background-image: url("images/medaillon.webp");
 	background-repeat: no-repeat;
 	border: 6px solid #fff;
+	margin-left: 180px;
+	margin-top: -50px;
 }
+@media screen and (max-width:1200px){
+	#medaillon{
+		display: none;
+	}
+}
+
+
 .miniatures {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -172,12 +179,12 @@ iframe.redux {
 	cursor: pointer;
 }
 
-.frere1 { background: url('images/bagarre.jpg') no-repeat center center / cover; }
-.frere2 { background: url('images/frere-de-toilette-cest-pour-la-vie.jpg') no-repeat center center / cover; }
-.frere3 { background: url('images/grand_respect.jpg') no-repeat center center / cover; }
-.frere4 { background: url('images/mais-heu.jpg') no-repeat center center / cover; }
-.frere5 { background: url('images/potes-de-sieste.jpg') no-repeat center center / cover; }
-.frere6 { background: url('images/promiscuite.jpg') no-repeat center center / cover; }
+.frere1 { background: url('images/bagarre.webp') no-repeat center center / cover; }
+.frere2 { background: url('images/frere-de-toilette-cest-pour-la-vie.webp') no-repeat center center / cover; }
+.frere3 { background: url('images/grand_respect.webp') no-repeat center center / cover; }
+.frere4 { background: url('images/mais-heu.webp') no-repeat center center / cover; }
+.frere5 { background: url('images/potes-de-sieste.webp') no-repeat center center / cover; }
+.frere6 { background: url('images/promiscuite.webp') no-repeat center center / cover; }
 
 
 

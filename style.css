@@ -152,6 +152,23 @@ header a {
 		display: none;
 	}
 }
+#dialogue {
+	opacity: 0;
+	pointer-events: none;
+}
+#medaillon:hover #dialogue {
+	opacity: 1;
+	background: #fefefe;
+	color: #030303;
+	border-radius: 3em;
+	position: absolute;
+	z-index: 1000;
+	padding: 0.5em 1em;
+	border:1.5px solid #000;
+	bottom: 0;
+	right: 0;
+	transition: opacity 0.2s ease-in-out;
+}
 
 
 /* MAIN  */

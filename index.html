@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link href="lightbox.min.css" rel="stylesheet" />
 	<title>Schieve</title>
 </head>
 
@@ -60,22 +61,34 @@
 			<p>Un mois après son adoption, une drôle de bête le rejoint. Plus vive, plus forte, et plus adroite. Mais aussi un ange qui veille sur son grand frère.</p>
 			<div class="miniatures">
 				<figure>
-					<div class="thumb frere1"></div><figcaption>Le meilleur jeu qui soit&nbsp;: la bagarre&nbsp;!</figcaption>
+					<a href="images/bagarre.webp" data-lightbox="brothersForLife">
+						<div class="thumb frere1"></div><figcaption>Le meilleur jeu qui soit&nbsp;: la bagarre&nbsp;!</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<div class="thumb frere2"></div><figcaption>Frères de litière, c'est frère pour la vie</figcaption>
+					<a href="images/frere-de-toilette-cest-pour-la-vie.webp" data-lightbox="brothersForLife">
+						<div class="thumb frere2"></div><figcaption>Frères de litière, c'est frère pour la vie</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<div class="thumb frere3"></div><figcaption>Respect</figcaption>
+					<a href="images/grand_respect.webp" data-lightbox="brothersForLife">
+						<div class="thumb frere3"></div><figcaption>Respect</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<div class="thumb frere4"></div><figcaption>…ou pas de respect</figcaption>
+					<a href="images/mais-heu.webp" data-lightbox="brothersForLife">
+						<div class="thumb frere4"></div><figcaption>…ou pas de respect</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<div class="thumb frere5"></div><figcaption>Mais on s'aimeuh !</figcaption>
+					<a href="images/potes-de-sieste.webp" data-lightbox="brothersForLife">
+						<div class="thumb frere5"></div><figcaption>Mais on s'aimeuh !</figcaption>
+					</a>
 				</figure>
 				<figure>
-					<div class="thumb frere6"></div><figcaption>Et on se tient chaud.</figcaption>
+					<a href="images/promiscuite.webp" data-lightbox="brothersForLife">
+						<div class="thumb frere6"></div><figcaption>Et on se tient chaud.</figcaption>
+					</a>
 				</figure>
 			</div>
 		</section>
@@ -118,5 +131,13 @@
 	<button onclick="backToTop()" id="btt" title="Back to top">Top</button>
 
 	<script src="main.js"></script>
+	<script src="lightbox.min.js"></script>
+     <script>
+        lightbox.option({
+        'wrapAround': true,
+		alwaysShowNavOnTouchDevices:true
+        }) 
+	</script>
+	
 </body>
 </html>
